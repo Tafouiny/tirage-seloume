@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Roue de la Fortune</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="entryForm">
+        <h2>Ajouter une entrée</h2>
+        <input type="text" id="name" placeholder="Nom" required>
+        <input type="number" id="weight" placeholder="Prix" required>
+        <button onclick="addEntry()">Ajouter</button>
+        <button onclick="displayWheel()">Afficher la roue</button>
+    </div>
+
+    <div class="wheel-container" style="display:none;">
+        <canvas id="wheel" width="500" height="500"></canvas>
+        <button id="spin">Tourner la Roue!</button>
+    </div>
+
+    <div id="winnerContainer" style="display: none;">
+        <div id="winnerName"></div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

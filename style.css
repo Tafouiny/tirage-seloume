@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.wheel-container, #entryForm {
+    margin-bottom: 20px;
+}
+
+input, button {
+    margin: 5px;
+    padding: 10px;
+}
+
+#winnerContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#winnerName {
+    font-size: 48px;
+    color: white;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
